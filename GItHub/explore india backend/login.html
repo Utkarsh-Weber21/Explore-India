@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+    min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100vh;*/
+        /* background-image: url(loginWall.jpg); */
+        /* background-repeat: no-repeat;
+        background-size: cover; */ 
+        padding: 30px;
+    }
+
+    .container {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        line-height: 1.5;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+
+    .Box {
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        height: 30px;
+        width: 275px;
+        margin: 15px;
+        padding: 5px;
+    }
+
+    input {
+        background-color: transparent;
+        color: black;
+    }
+
+    .Box input {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .Box img {
+        height: 18px;
+    }
+
+    .Box ::placeholder {
+        color: black;
+    }
+
+    .LogBtn1{
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width:fit-content;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* margin: 15px; */
+        padding: 5px;
+        background-color: rgb(223, 150, 16);
+    }
+    .buttonDiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+   
+
+    .policy {
+        margin: 15px;
+    }
+
+    .policy a {
+        text-decoration: none;
+        color: red;
+    }
+    #ig{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      /* opacity: 0.3; */
+    }
+</style>
+
+<body>
+  <img src="https://wallpapercave.com/wp/wp7231448.jpg" alt="img" id="ig">
+    <div class="container">
+        <form id="LoginForm" action="/loggedin" method="POST">
+            <h2 id="LogH2">Log in</h2>
+
+            <div class="form-group">
+                <div class="Box">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="Box">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+               
+
+            </div>
+
+            <div class="policy">
+                <input type="checkbox"> I agree to the <a href="#">privicy</a> nad <a href="#">policy</a>
+            </div>
+                <div class="buttonDiv">
+                <button type="submit" class="LogBtn1">Log In</button>
+                <a href="#" onclick="location.href='http://127.0.0.1:9000'">Click me to sign up</a>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

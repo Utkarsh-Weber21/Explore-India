@@ -1,0 +1,938 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-bar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo{
+    height: 100%;
+    width: 15%;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.link-container{
+    height: 100%;
+    width: 40%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.link{
+    height: 50%;
+    width: 30%;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+.anc{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 101;
+}
+
+.anc a{
+    font-size: 2.5vh;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.link .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    bottom: -100%;
+    position: absolute;
+    transition: all linear 0.4s;
+}
+
+
+.link:hover .overlay{
+    bottom: 0%;
+}
+
+,link:hover .anc a{
+    color: white;
+}
+
+
+.link:hover .anc a{
+    color: white;
+}
+
+.link:hover{
+    box-shadow: 10px 10px 8px black;
+}
+
+
+
+
+
+
+
+.page1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white; /* Set text color to contrast with video */
+    z-index: 0; /* Ensure content is above the video */
+    padding: 20px;
+}
+
+.content h1{
+    font-size: 8vw;
+    font-weight: 800;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    position: relative;
+    transition: all linear 0.5s;
+}
+
+.page1 h1:hover {
+    color: orange;
+}
+
+.page1 h1::before{
+    content: "EXPLORE INDIA";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    color: black;
+    -webkit-text-stroke: 2px rgb(255, 166, 0);
+    z-index: -1;
+}
+
+.content p{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    font-size: 1.5vw;
+    margin-left: 10vw;
+}
+
+
+
+
+
+
+
+
+.page2{
+    height: 60%;
+    width: 100%;
+    background-color: #2970DB;
+}
+
+.as{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.rs{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blog-background{
+    height: 90%;
+    width: 80%;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(images/blog\ bg\.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    overflow: hidden;
+}
+
+.blog-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    left: -100%;
+    transition: all linear 0.6s;
+}
+
+.blog-overlay a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 3vh;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.blog-background:hover .blog-overlay{
+    left: 0%;
+}
+
+
+.ls-cont{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2 .ls{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2;
+    gap: 10%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #2970DB;
+    padding-right: 2%;
+    padding-left: 2%;
+    transition: all linear 0.4s ;
+}
+
+.ls:hover{
+    box-shadow: -10px 10px 8px  white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ls h1{
+    font-size: 3vw;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.ls p{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+.page3{
+    height: 80%;
+    width: 100%;
+}
+
+.page3 .cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.page3 .cont .head{
+    height: 10%;
+    width: 100%;
+    font-size: 2vw;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3 .cont .card{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page3 .card1 {
+    background: url(images/taj-mahal-world-heritage-site.webp);
+    height: 100%;
+    width: 30%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card1 .place1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2970db;
+    top: -100%;
+    transition: all ease 0.6s;
+
+}
+
+.place1 h1 {
+    font-size: 5.5vw;
+    font-weight: 1000;
+    background-image: url(images/taj\ mahal\ landscape.jpeg);
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+}
+
+.place1 p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.place1 a{
+    font-size: 2.2v1;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10%;
+}
+
+.card1:hover  .place1 {
+    top: 0%;
+}
+
+
+.page3 .card2{
+    background: url(images/red\ fort.jpeg);
+    height: 100%;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card2 .place2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    top: -100%;
+    transition: all ease 0.6s;
+    background-color: #2970db;
+}
+
+.place2 h1{
+    font-size: 5.5vw;
+    font-weight: 1000;
+    background-image: url(images/red\ fort\ landscape.jpeg);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.place2 p{
+    font-size: 1.5vw;
+}
+
+.place2 a{
+    font-size: 2.2v1;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10%;
+}
+
+.card2:hover .place2{
+    top: 0%;
+}
+
+.page3 .card3{
+    background: url(images/ajanta\ cave\ \(2\).jpeg);
+    height: 100%;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card3 .place3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2970db;
+    top: -100%;
+    transition: all ease 0.6s;
+}
+
+.place3 h1{
+    font-size: 5.5vw;
+    font-weight: 1000;
+    background-image: url(images/ajanta\ cave.jpeg);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.place3 p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.place3 a{
+    font-size: 2.2v1;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10%;
+}
+
+.card3:hover .place3{
+    top: 0%;
+}
+
+
+.page3 .exp{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.exp .but{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2970DB;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    transition: all ease 0.4s;
+}
+
+.but-a a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.but-a:hover{
+    font-size: calc(100%);
+}
+
+.but:hover{
+    box-shadow: -5px 5px 5px rgb(29, 0, 92);
+}
+
+
+
+
+
+
+
+.page4{
+    height: 80%;
+    width: 100%;
+}
+
+.page4 .container{
+    background-image: url(images/taj-mahal-world-heritage-site.webp);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;;
+    background-position: center;
+}
+
+
+.gallery-head{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    transition: all ease 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-head h1{
+    font-size: 7vw;
+    font-weight: 800;
+
+}
+
+.gallery-exp{
+    height: 100%;
+    width: 100%;
+    right: -100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease 0.8s;
+    padding: 10%;
+    gap: 10%;
+    overflow-x: hidden;
+}
+
+.gallery-exp h1{
+    font-size: 7vw;
+    font-weight: 800;
+}
+
+.gallery-exp button{
+    height: 8%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid black;
+    font-size: 1.8vw;
+    transition: all ease 0.4s;
+}
+
+.gallery-exp button:hover{
+    font-size: 2vw;
+
+}
+
+.container:hover .gallery-head{
+    left: -100%;
+}
+
+.container:hover .gallery-exp{
+    opacity: 1;
+    right: 0%;
+    backdrop-filter: blur(5px);
+
+}
+
+
+
+
+
+.page5{
+    height: 80%;
+    width: 100%;
+}
+
+.state-container{
+    height: 100%;
+    width: 100%;
+    gap:5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.state-head{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all ease 0.8s;
+    left: 0%;
+    background-color: white;
+}
+
+.state-head h1{
+    font-size: 12vw;
+    font-weight: 1200;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    transition: all ease 0.6s;
+}
+
+.state-head a{
+    text-decoration: none;
+}
+
+.state-head h1:hover{
+    color: #2970db;
+}
+
+
+.state-card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: -100%;
+    transition: all ease 0.8s;
+    background-color: aquamarine;
+}
+
+
+.state-card .bihar{
+    height: 60%;
+    width: 30%;
+    background-image: url(images/Bihar\ _\ Bharat.jpeg);
+    background-color: black;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.info1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5%;
+    background-color: #2970DB;
+    position: absolute;
+    top: -100%;
+    transition: all ease 0.6s;
+}
+
+.info1 h1{
+    font-size: 6vw;
+}
+
+.info1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+.info1 a:hover{
+    font-size: 2.2vw;
+}
+
+.bihar:hover .info1{
+    top: 0%;
+}
+
+.state-card .ap{
+    height: 60%;
+    width: 30%;
+    border-radius: 20px;
+    background-image: url(images/Andhra\ Pradesh\ _\ Bharat.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.info2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5%;
+    background-color: #2970DB;
+    position: absolute;
+    top: -100%;
+    transition: all ease 0.6s;
+}
+
+.info2 h1{
+    font-size: 6vw;
+    text-transform: capitalize;
+}
+
+.info2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+.info2 a:hover{
+    font-size: 2.2vw;
+}
+
+.ap:hover .info2{
+    top: 0%;
+}
+
+.state-card .maharastra{
+    height: 60%;
+    width: 30%;
+    border-radius: 20px;
+    background-image: url(images/maharastra.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.info3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5%;
+    background-color: #2970DB;
+    position: absolute;
+    top: -100%;
+    transition: all ease 0.6s;
+}
+
+.info3 h1{
+    text-transform: capitalize;
+    font-size: 5vw;
+}
+
+.info3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+.info3 a:hover{
+    font-size: 2.2vw;
+}
+
+.maharastra:hover .info3{
+    top: 0%;
+}
+
+
+.state-button{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 2%;
+    z-index: 3;
+}
+
+.state-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    border-radius: 10px;
+    background: transparent;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

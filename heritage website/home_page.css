@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#logo{
+    width: 10%;
+}
+
+#logo-img{
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.search{
+    border: 2px solid black;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.search input{
+    box-sizing: border-box;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    background: transparent;
+}
+
+.search button img{
+    width: 100%;
+}
+
+.search button{
+    width: 80px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background: transparent;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content{
+    margin-top: 350px;
+}
+
+.top-places{
+    display:flex;
+    justify-content: center;    
+    font-size: 40px;
+    text-shadow: 10px 10px 20px black;
+    margin: 20px;
+}
+
+.places{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.places img{
+    margin: 20px;
+    border: 1px solid black;
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 228, 200);
+}
+.slider-container {
+
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slider-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #555;
+  }
+  
